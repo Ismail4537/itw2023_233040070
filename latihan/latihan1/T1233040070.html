@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/style.css">
+    <style>
+        html{
+            background-color: darkgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: lightgrey;
+        }
+        H1{ 
+            text-align: center;
+        }
+        h2{ 
+            text-align: center;
+        }
+        .foto{
+        	float: left;
+        	border: 5cm;
+        }
+        table{
+            border-color: black;
+            background-color: gray;
+        }
+    </style>
     <title>Portofilo</title>
 </head>
 <body>
-    <H1>Portofilo</H1>
+    <H1><b>Portofilo</b></H1>
     <hr>
     <div class="foto">
         <table border="5">
             <td>
-            <img src="./gambar/pspt.jpg" width="95" height="132">
+            <img src="pspt.jpg" width="90" height="109">
             </td>
         </table>
     </div>
@@ -38,13 +60,16 @@
                 <td>No. HP</td>
                 <td>087720008578</td>
             </tr>
-            <tr>
-                <td>Keterampilan khusus</td>
-                <td>programing</td>
-            </tr>
         </table>
     </div>
     <hr>
+    <div class="desk">
+        <h2>Deskripsi</h2>
+        <hr>
+        <pre>
+            Saya adalah seorang Mahasiswa UNPAS Prodi Informatika
+        </pre>
+    </div>
     <div class="pendidikan">
         <h2>Pendidikan</h2>
         <hr>
@@ -68,7 +93,16 @@
         </table>
     </div>
     <hr>
-    <div class="bahasa"></div>
+    <div class="pemrog">
+        <h2>Bahasa Pemrograman</h2>
+        <hr>
+        <ul>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>Java</li>
+        </ul>
+    </div>
+    <div class="bahasa">
         <h2>Bahasa</h2>
         <hr>
         <table border=2>            

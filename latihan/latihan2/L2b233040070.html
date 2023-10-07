@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Table</title>
+        <style>
+            #bodyTab{
+                background-color: white;
+            }
+            table{
+                font-family: 'Times New Roman', Times, serif;
+                background-color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" cellspacing="2" cellpadding="10">
+                <tr>
+                    <td colspan="3" align="center"><b>INPUT DATA MAHASISWA</b></td>
+                </tr>
+            
+            <tr id="bodyTab">
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="text" name="username" id=""></td>
+            </tr>
+            <tr id="bodyTab">
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="password" id=""></td>
+            </tr>
+            <tr id="bodyTab">
+                <td>Fullname</td>
+                <td>:</td>
+                <td><input type="text" name="fullname" id=""></td>
+            </tr>
+            <tr id="bodyTab">
+                <td>E-mail</td>
+                <td>:</td>
+                <td><input type="email" name="email" id=""></td>
+            </tr>
+            <tr id="bodyTab">
+                <td>Agama</td>
+                <td>:</td>
+                <td>
+                    <select id="">
+                        <option name="agama" selected>--Pilih Agama--</option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="agamalain">Agama lain</option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="bodyTab">
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="laki" id="">Laki-laki
+                    <input type="radio" name="perempuan" id="">Perempuan
+                </td>
+            </tr>
+            <tr id="bodyTab">
+                <td>Profil Singkat</td>
+                <td>:</td>
+                <td>
+                    <textarea name="profil" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr id="bodyTab">
+                <td colspan="3" align="right"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </body>
+</html>

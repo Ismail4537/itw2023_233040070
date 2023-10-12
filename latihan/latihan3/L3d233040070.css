@@ -1,0 +1,40 @@
+html, body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+body{
+    background-image: url('background.png');
+    background-repeat: repeat-x;
+}
+h1{
+    font-size: 60px;
+    font-family: Comic Sans MS;
+    color: darkblue;
+    text-align: center;
+}
+h4{
+    font-style: italic;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.p1{
+    color: orange;
+}
+.p1, .p2{
+    text-align: center;
+}
+.p2{
+    text-align: right;
+    line-height: 25px;
+}
+.a1:link {color:red; text-decoration:underline;}
+.a1:visited {color: red; text-decoration:none;}
+.a1:hover {font-size:20; color:red; text-decoration:none;}
+.a1:active {color: red; text-decoration:none;}
+
+.a2:link {color:blue; font-weight: bold; text-decoration:none;}
+.a2:visited {color: white; font-weight: bold; text-decoration:none; background-color: blue;}
+.a2:hover {font-size:20; color: white; font-weight: bold; text-decoration:none; background-color: blue;}
+.a2:active {color: white; font-weight: bold; text-decoration:none; background-color: blue;}

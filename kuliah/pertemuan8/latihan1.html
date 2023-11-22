@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cont{
+            width: 600px;
+            height: 600px;
+            border: 10px solid black;
+            margin: /*atas bawah*/ 50px /*kiri kanan*/auto;
+            /* pake flex */
+            display: flex;
+            /* horizontal(kiri kanan) */
+            justify-content: space-evenly;
+            /* vertical(atas bawah) */
+            align-items: center;
+            gap: 5px;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            /* g pake flex */
+            /* float: left;
+            display: inline-block;
+            margin: 210px 20px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        
+    </div>
+</body>
+</html>

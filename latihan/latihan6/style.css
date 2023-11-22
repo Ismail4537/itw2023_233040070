@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Abril Fatface', serif, sans-serif;
+    overflow-x: hidden;
+}
+/* Navbar */
+nav{
+    display: flex;
+    background-color: rgb(84, 84, 84);
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: rgb(255, 255, 255);
+    height: 50px;
+    align-items: center;
+    border-bottom: 5px solid rgb(255, 183, 0);
+    box-shadow: 0 0 5px 5px rgb(255, 153, 0);
+}
+nav .logo{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+/* Menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    left: -10px;
+    top: -3px;
+    height: 28px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu-toggle span{
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all .5s;
+}
+/* menu animation */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(1px, 1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(1px, -2px);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+}
+/* Responsive */
+/* Tablet */
+@media screen and (max-width: 768px) {
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        flex-direction: column;
+        background-color: rgb(68, 68, 68);
+        width: 100%;
+        transform: translateY(-100%);
+        transition: all 1s;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul.slide{
+        transform: translateY(0);
+    }
+    .menu-toggle{
+        display: flex;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 576px) {
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        flex-direction: column;
+        background-color: rgb(68, 68, 68);
+        width: 100%;
+        transform: translateY(-100%);
+        transition: all 1s;
+    }
+    nav ul li a{
+        font-size: 30px;
+    }
+    nav ul.slide{
+        transform: translateY(0);
+    }
+    .menu-toggle{
+        display: flex;
+    }
+}

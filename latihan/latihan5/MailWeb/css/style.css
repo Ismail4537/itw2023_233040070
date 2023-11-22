@@ -32,6 +32,7 @@ body{
     box-shadow: 0 0 10px white;
     margin-left: 200px;
     margin-right: 200px;
+    overflow: hidden;
 }
 .headBG{
     background-color: #333;

@@ -9,7 +9,7 @@ body{
 /* Navbar */
 nav{
     display: flex;
-    background-color: rgb(84, 84, 84);
+    background: linear-gradient(rgb(113, 113, 113), rgba(84, 84, 84, 1));
     justify-content: space-around;
     /* padding: 20px 0; */
     color: rgb(255, 255, 255);
@@ -95,7 +95,10 @@ nav ul li a:hover{
         justify-content: space-evenly;
         z-index: -1;
         flex-direction: column;
-        background-color: rgb(68, 68, 68);
+        background: linear-gradient(rgb(255, 153, 0),
+                                    rgb(68, 68, 68),
+                                    rgb(68, 68, 68), 
+                                    rgb(0, 0, 0));
         width: 100%;
         transform: translateY(-100%);
         transition: all 1s;
@@ -125,7 +128,10 @@ nav ul li a:hover{
         justify-content: space-evenly;
         z-index: -1;
         flex-direction: column;
-        background-color: rgb(68, 68, 68);
+        background: linear-gradient(rgb(255, 153, 0), 
+                                    rgb(68, 68, 68), 
+                                    rgb(68, 68, 68), 
+                                    rgb(0, 0, 0));
         width: 100%;
         transform: translateY(-100%);
         transition: all 1s;

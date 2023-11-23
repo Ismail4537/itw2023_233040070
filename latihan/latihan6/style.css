@@ -97,7 +97,10 @@ nav ul li a:hover{
         flex-direction: column;
         background: linear-gradient(rgb(255, 153, 0),
                                     rgb(68, 68, 68),
+                                    rgb(68, 68, 68),
                                     rgb(68, 68, 68), 
+                                    rgb(68, 68, 68),
+                                    rgb(68, 68, 68),
                                     rgb(0, 0, 0));
         width: 100%;
         transform: translateY(-100%);
@@ -130,7 +133,10 @@ nav ul li a:hover{
         flex-direction: column;
         background: linear-gradient(rgb(255, 153, 0), 
                                     rgb(68, 68, 68), 
+                                    rgb(68, 68, 68),
                                     rgb(68, 68, 68), 
+                                    rgb(68, 68, 68),
+                                    rgb(68, 68, 68),
                                     rgb(0, 0, 0));
         width: 100%;
         transform: translateY(-100%);

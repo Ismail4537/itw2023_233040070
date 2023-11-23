@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    font-family: 'Abril Fatface', serif, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-x: hidden;
 }
 /* Navbar */
@@ -34,6 +34,12 @@ nav ul li a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 0.8em;
+    transition: .5s;
+    border: 0;
+}
+nav ul li a:hover{
+    text-shadow: 0 0 10px;
+    border-bottom: 3px solid;
 }
 /* Menu */
 .menu-toggle{
@@ -64,7 +70,7 @@ nav ul li a{
 /* menu animation */
 .menu-toggle span:nth-child(2){
     transform-origin: 0 0;
-}
+}   
 .menu-toggle span:nth-child(4){
     transform-origin: 0 100%;
 }
@@ -84,7 +90,7 @@ nav ul li a{
         position: absolute;
         right: 0;
         top: 0;
-        height: 100vh;
+        height: 80%;
         align-items: center;
         justify-content: space-evenly;
         z-index: -1;
@@ -93,9 +99,13 @@ nav ul li a{
         width: 100%;
         transform: translateY(-100%);
         transition: all 1s;
+        border-radius: 15px;
+        border-bottom: 5px solid black;
+        box-shadow: 0 0 10px 5px black;
     }
     nav ul li a{
         font-size: 20px;
+        transition: .5s;
     }
     nav ul.slide{
         transform: translateY(0);
@@ -110,7 +120,7 @@ nav ul li a{
         position: absolute;
         right: 0;
         top: 0;
-        height: 100vh;
+        height: 80%;
         align-items: center;
         justify-content: space-evenly;
         z-index: -1;
@@ -119,6 +129,9 @@ nav ul li a{
         width: 100%;
         transform: translateY(-100%);
         transition: all 1s;
+        border-radius: 15px;
+        border-bottom: 5px solid black;
+        box-shadow: 0 0 10px 5px black;
     }
     nav ul li a{
         font-size: 30px;

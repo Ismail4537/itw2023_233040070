@@ -41,6 +41,7 @@ nav ul li a:hover{
     text-shadow: 0 0 10px;
     border-bottom: 3px solid;
 }
+
 /* Menu */
 .menu-toggle{
     display: none;
@@ -84,7 +85,7 @@ nav ul li a:hover{
     opacity: 0;
 }
 /* Responsive */
-/* Tablet */
+/* Tablet */    
 @media screen and (max-width: 768px) {
     nav ul{
         position: absolute;
